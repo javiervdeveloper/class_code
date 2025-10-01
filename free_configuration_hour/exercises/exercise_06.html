@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Vamos a desarrollar una calculadora
+        //Lo primero que voy a hacer es crear las variables y la entrada de datos numéricos a través del teclado.
+
+        let numero_01;
+        let numero_02;
+        let resultado;
+
+        numero_01 = prompt("Introduzca el primer número");
+        numero_02 = prompt("Introduzca el segundo número");
+
+        //La entrada de datos funciona perfectamente
+        //Ahora crearemos el calculo de suma
+
+        resultado = parseInt(numero_01) + parseInt(numero_02);
+
+        //La suma funciona perfectamente, ahora mostrara el resultado con el siguiente mensaje
+
+        document.write("Suma:")
+        document.write(resultado);
+        document.write("<br>");
+
+        //Ahora crearemos el calculo de la resta
+
+        resultado = parseInt(numero_01) - parseInt(numero_02);
+
+        //La resta funciona perfectamente, ahora mostrate el resulado con el siguiente mensaje
+
+        document.write("Resta:")
+        document.write(resultado);
+        document.write("<br>");
+
+        //Ahora crearemos el calculo de su multiplicacion
+
+        resultado = parseInt(numero_01) * parseInt(numero_02);
+
+        //La multiplicación funciona perfectamente, ahora mostrare el resultado con el siguiente mensaje
+
+        document.write("Multiplicación:")
+        document.write(resultado);
+        document.write("<br>");
+
+        //Ahora crearemos el calculo de su división
+
+        resultado = parseInt(numero_01) / parseInt(numero_02);
+
+        //La división funciona perfectamente, ahora mostrare el resultado con el siguiente mensaje
+
+        document.write("División:")
+        document.write(resultado);
+        document.write("<br>");
+
+        //Ahora crearemos el calculo de su módulo
+
+        resultado = parseInt(numero_01) % parseInt(numero_02);
+
+        //El modulo funciona perfectamente, ahora mostrare el resultado con el siguiente mensaje
+
+         document.write("Módulo:")
+         document.write(resultado);
+         document.write("<br>");
+
+    </script>
+</body>
+</html>

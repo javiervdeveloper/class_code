@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise_07</title>
+</head>
+<body>
+    <script>
+
+        //Vamos a realizar un programa que pieda el nombre y los dos apellidos de un cliente
+        //Deberá mostrarlos por pantalla concatenado por pantalla
+        //Posteriormente debe pedir el precio de un articulo y la cantidad que lleva el cliente
+        //Mostrar por pantalla lo que el cliente debe abonar
+
+        //Vamos a realizar la entrada de datos del user y los muestre en pantalla
+
+        let user_name;
+        let user_second_name_01;
+        let user_second_name_02;
+        let user_concatenated_name;
+
+        user_name = prompt("Ingrese su nombre");
+        user_second_name_01 = prompt("Ingre su apellido principal");
+        user_second_name_02 = prompt("Ingrese su segundo apellido");
+
+        //La entrada de datos funciona perfectamente
+        //Ahora con una suma haremos que esos datos salgan concatenados por pantalla
+
+        user_concatenated_name = user_name + user_second_name_01 + user_second_name_02;
+        document.write("Hola ")
+        document.write(user_concatenated_name);
+        
+
+        //El nombre del usuario se concatena perfectamente y se muestra de manera implacable
+        //Ahora haremos que el user pida el precio del producto, diga la cantidad y lo que debe de pagar
+
+        let user_need_price;
+        let user_money;
+        let user_pay;
+
+        user_need_price = prompt("Pida el precio de un artículo");
+        user_amount = prompt("Indique la cantidad");
+
+        user_pay = user_need_price * user_amount;
+        document.write(" usted debe abonar: ")
+        document.write(user_pay);
+        document.write(" euros");
+
+
+
+
+
+
+    </script>
+</body>
+</html>
