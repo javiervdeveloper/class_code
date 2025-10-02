@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise_09</title>
+</head>
+<body>
+    <script>
+
+        // Vamos a desarrollar una aplicacion en la cual ingresaremos 3 notas de un alumno, si el promedio es mayor o igual a 5 mostrara "Promociona". Si el valor es menor a 5 mostrará "No promociona"
+        // Lo primero que vamos a hacer es crear las variables de los numeros que ingresaremos.
+
+        let number_01;
+        let number_02;
+        let number_03;
+
+        // Crearemos los prompts para que podamos darle valor desde el teclado
+
+        number_01 = prompt("Ingresa tu primera nota");
+        number_02 = prompt("Ingresa tu segunda nota");
+        number_03 = prompt("Ingresa tu tercera nota");
+
+        // Le daremos valor numérico a estas variables
+
+        number_01 = parseInt(number_01);
+        number_02 = parseInt(number_02);
+        number_03 = parseInt(number_03);
+
+        // Ahora crearemos la variable de suma
+
+        let suma;
+
+        // Le daremos el valor
+
+        suma = number_01 + number_02 + number_03;
+
+        // Ahora crearemos la variable de promedio
+
+        let promedio;
+
+        // Le daremos un valor
+
+        promedio = suma/3;
+
+        // Vamos a desarrollar la lógica para saber si promociona o no
+
+        if (promedio>=5){
+            document.write("Promociona");
+        } else{
+            if(promedio<5){
+                document.write("No promociona")
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>
