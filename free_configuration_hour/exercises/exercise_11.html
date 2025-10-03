@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise_11</title>
+</head>
+<body>
+    <script>
+        //Vamos a desarrollar un programa el cual al cargar un numero de hasta 3 cifras me diga si tiene 1, 2, 3 cifra.
+        //Lo primero que voy a hacer es crear la variable del nummero
+
+        let number;
+
+        //Ahora le voy a dar el valor de numero a la variable
+
+        number = parseInt(number);
+
+        //Perfecto, una vez hecho esto pondre una funcion prompt para que pueda introducir el numero
+
+        number = prompt("Ingrese un número de 1 a 3 cifras");
+
+        //Ahora desarrollare la logica 
+
+        if (number<10) {
+            document.write("El numero es de una cifra");
+        } else {
+            if (number>9 && number<100) {
+                document.write("El numero es dos cifras");
+            } else {
+                if (number>99) {
+                    document.write("El numero es de tres cifras");
+
+                }
+            }
+        }
+           
+    </script>
+</body>
+</html>
