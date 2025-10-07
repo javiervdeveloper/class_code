@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise_15</title>
+</head>
+<body>
+    <script>
+
+        //Debemos desarrollar un programa que pida el ingreso de un precio de un articulo y la cantidad que lleva el cliente. Mostrar lo que debe abonar el comprador.
+        //Lo primero que vamos a hacer es crear las variables
+
+        let user_price;
+        let user_quantity;
+
+        //Ahora le vamos a dar valor numerico
+
+        user_price = parseInt(user_price);
+        user_quantity = parseInt(user_quantity);
+
+        //Vamos a desarrollar el sistema de ingreso de datos
+
+        user_price = prompt("Ingrese el precio del articulo");
+        user_quantity = prompt("Ingrese la cantidad que lleva del articulo");
+
+        //Vamos a crear la variable debe de abonar el usuario
+
+        let user_pay;
+
+        //Vamos a desarrollar la operacion
+
+        user_pay = user_price * user_quantity;
+
+        //Ya esta desarrollada la operacion, ahora vamos a hacer que lo muestre por pantalla
+
+        document.write("Usted debe de abonar: ");
+        document.write(user_pay);
+
+
+    </script>
+</body>
+</html>
