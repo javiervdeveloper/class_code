@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise_13</title>
+</head>
+<body>
+    <script>
+
+        //Vamos a desarrollar un programa el cual se ingresaran 4 numeros, y este nos calculara la suma de los dos primeros y el producto del tercero y cuarto.
+        //Lo primero que vamos a hacer es crear las variables
+
+        let number_01;
+        let number_02;
+        let number_03;
+        let number_04;
+
+        //Ahora les vamos a dar valor numerico
+
+        number_01 = parseInt(number_01);
+        number_02 = parseInt(number_02);
+        number_03 = parseInt(number_03);
+        number_04 = parseInt(number_04);
+
+        //Ya estan creadas las variables numericas, ahora desarrollaremos un sistema para que pueda introducir los datos el usuario
+
+        number_01 = prompt("Ingrese el primer numero");
+        number_02 = prompt("Ingrese el segundo numero");
+        number_03 = prompt("Ingrese el tercer numero");
+        number_04 = prompt("Ingrese el cuarto numero");
+
+        //Ahora desarrollaremos las variable con las operacion de suma con los primeros numeros 
+
+        let suma;
+
+        suma = parseInt(number_01) + parseInt(number_02);
+
+        //Haremos lo mismo pero con el producto del tercer y cuarto numero
+
+        let producto;
+
+        producto = number_03*number_04;
+
+        //Ya esta terminada el backend del programa, ahora haremos los mensajes
+
+        document.write("La suma de los dos primeros números es ");
+        document.write(suma);
+
+        document.write("</br>");
+
+        document.write("El producto de los dos últimos números es ");
+        document.write(producto);
+
+    
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
