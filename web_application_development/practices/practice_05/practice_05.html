@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice_05</title>
+</head>
+<body>
+    <h1>Ejemplos de tablas</h1>
+</br>
+    <h2>Tablas con bordes "colapsados"</h2>
+</br>
+    <table>
+        <style>
+table {
+border-collapse: collapse;
+}
+th, td{
+border:1px solid black;
+}
+</style>
+        <tr>
+           <td>Elemento 1</td> 
+           <td>Elemento 2</td>      
+        </tr>
+        <tr>
+            <td>Elemento 3</td>
+            <td>Elemento 4</td>
+        </tr>
+    </table>
+</br>
+    <h2>Tablas con celdas de cabecera y caption</h2>
+</br>
+    Grandes jugadores colombianos
+</br>
+    <table>
+        <style>
+table {
+border-collapse: collapse;
+}
+th, td{
+border:1px solid black;
+}
+</style>
+
+<tr>
+    <th>Nombre</th>
+    <th>Apellido1</th>
+    <th>Apellido2</th>
+</tr>
+<tr>
+    <td>José René</td>
+    <td>Higuita</td>
+    <td>Zapata</td>
+</tr>
+<tr>
+    <td>Carlos Alberto</td>
+    <td>Valderrama</td>
+    <td>Palacio</td>
+</tr>
+    </table>
+
+    <h2>Tablas con atributos rowspan</h2>
+    <table>
+        <style>
+table {
+border-collapse: collapse;
+}
+th, td{
+border:1px solid black;
+}
+</style>
+
+<table>
+  <tr>
+    <td rowspan="2">Elemento1</td>
+    <td>Elemento2</td>
+  </tr>
+  <tr>
+    <td>Elemento3</td>
+  </tr>
+  <tr>
+    <td>Elemento4</td>
+    <td>Elemento5</td>
+  </tr>
+</table>
