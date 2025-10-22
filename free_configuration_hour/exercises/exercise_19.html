@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise_19</title>
+</head>
+<body>
+    <script>
+        //Vamos a desarrollar un programa que pida por teclado dos numeros y una opcion de entre las siguientes.
+        //1. sumar
+        //2. restar
+        //3.multiplicar
+        //4.dividir
+        //(Si ingresa un numero o palabra diferente, muestra opcion no valida)
+        //Si se encuentra con la opcion 1 o la palabra sumar, debes sumar los dos valores y mostrar el resultado. Asi sucesivamente.
+
+        //Creamos las variables
+
+        let number_01;
+        let number_02;
+        let operation_sumar;
+        let operation_restar;
+        let operation_multiplicar;
+        let operation_dividir;
+
+        //Vamos a crear el sistema de entrada de datos
+
+        number_01 = prompt("Ingresa el primer numero");
+        number_02 = prompt("Ingresa el segundo numero");
+        option = prompt("Ingrese sumar, restar, multiplicar, dividir");
+
+        //Desarrollamos el resultado de cada operacion
+
+        number_01 = parseInt(number_01);
+        number_02 = parseInt(number_02);
+
+        operation_sumar = number_01 + number_02;
+        operation_restar = number_01 - number_02;
+        operation_multiplicar = number_01 * number_02;
+        operation_dividir = number_01 / number_02;
+
+        //Vamos a convertirlo en numerico
+
+        
+        
+        // Desarrollamos la logica
+       
+        switch (option) {
+            case "sumar":
+                document.write(operation_sumar);
+                break;
+            case restar:
+                document.write(operation_restar);
+                break;
+            case multiplicar:
+                document.write(operation_multiplicar);
+                break;
+            case dividir:
+                document.write(operation_dividir);
+                break;
+            default:
+                document.write('debe ingresar un opcion correcta');
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise_18</title>
+</head>
+<body>
+    <script>
+        //Vamos a desarrollar un programa que nos solicita el ingreso de algunas de estas palabras(casa, mesa, perro,gato)
+        //Luego nos mostrara la palabra traducida al ingles.
+
+        //Vamos a crear la variable
+
+        let text;
+
+        //Desarrollamos el sistema de entrada de texto
+        text = prompt("Ingrese alguna de estas palabras: casa, mesa, perro, gato");
+        
+        //Diseñamos la logica
+        
+        switch (text) {
+            case "casa":
+                document.write("house")
+                break; 
+            case "mesa":
+                document.write("table");
+                break;
+            case "perro":
+                document.write("dog");
+                break;
+            case "gato":
+                document.write("cat");
+                break;
+        }
+    </script>
+</body>
+</html>
