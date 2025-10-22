@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice_08</title>
+</head>
+<body>
+    <!--Este es el estilo para los formularios-->
+   
+    <style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 40px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #e53935;
+    font-size: 2.4em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px #000;
+  }
+
+  form {
+    background-color: #1e1e1e;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(229, 57, 53, 0.3);
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  fieldset {
+    border: none;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  legend {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ff5252;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff8a80;
+    padding-bottom: 5px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #f5f5f5;
+  }
+
+  input[type="text"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ff5252;
+    border-radius: 6px;
+    background-color: #2c2c2c;
+    color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  input[type="text"]:focus,
+  input[type="date"]:focus {
+    border-color: #ff1744;
+    box-shadow: 0 0 5px #ff1744;
+    outline: none;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+    accent-color: #ff5252;
+  }
+
+  .radio-group,
+  .checkbox-group {
+    margin-bottom: 15px;
+  }
+
+  .radio-group label,
+  .checkbox-group label {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  button {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  button:hover {
+    background-color: #b71c1c;
+    transform: scale(1.05);
+  }
+
+  button[type="reset"] {
+    background-color: #757575;
+  }
+
+  button[type="reset"]:hover {
+    background-color: #616161;
+  }
+</style>
+
+
+  <h1>Cuestionario de información</h1>
+
+  <form>
+    <fieldset>
+      <legend><strong>Datos personales</strong></legend>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br><br>
+
+      <label>Edad:</label><br>
+      <input type="radio" id="edad1" name="edad" value="menos20">
+      <label for="edad1">Menos de 20</label><br>
+      <input type="radio" id="edad2" name="edad" value="21a30">
+      <label for="edad2">De 21 a 30</label><br>
+      <input type="radio" id="edad3" name="edad" value="31a40">
+      <label for="edad3">De 31 a 40</label><br>
+      <input type="radio" id="edad4" name="edad" value="mas40">
+      <label for="edad4">Más de 40</label><br><br>
+
+      <label for="profesion">Profesión:</label>
+      <select id="profesion" name="profesion">
+        <option value="funcionario">Funcionario</option>
+        <option value="profesor">Profesor</option>
+        <option value="ingeniero">Ingeniero</option>
+        <option value="otro">Otro</option>
+      </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend><strong>Datos de la vivienda</strong></legend>
+
+      <label for="dormitorios">Número de dormitorios:</label>
+      <select id="dormitorios" name="dormitorios">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select><br><br>
+
+      <label for="tipo">Tipo de vivienda:</label>
+      <select id="tipo" name="tipo">
+        <option value="piso">Piso</option>
+        <option value="casa">Casa</option>
+        <option value="ático">Ático</option>
+      </select><br><br>
+
+      <label for="precio">Precio (€):</label>
+      <input type="number" id="precio" name="precio"><br><br>
+
+      <label for="zona">Zona:</label>
+      <select id="zona" name="zona">
+        <option value="centro">Centro</option>
+        <option value="nervion">Nervión</option>
+        <option value="triana">Triana</option>
+        <option value="macarena">Macarena</option>
+      </select><br><br>
+
+      <label>Extras:</label><br>
+      <input type="checkbox" id="piscina" name="extras" value="piscina">
+      <label for="piscina">Piscina</label><br>
+      <input type="checkbox" id="jardin" name="extras" value="jardin">
+      <label for="jardin">Jardín</label><br>
+      <input type="checkbox" id="garage" name="extras" value="garage">
+      <label for="garage">Garage</label><br>
+      <input type="checkbox" id="sauna" name="extras" value="sauna">
+      <label for="sauna">Sauna</label>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Enviar cuestionario</button>
+    <button type="reset">Borrar cuestionario</button>
+  </form>
+
+  <br>
+
+
+  <h1>Examen de HTML</h1>
+
+  <form>
+    <!-- Pregunta 1 -->
+    <p><strong>1. ¿Qué significa HTML?</strong></p>
+    <input type="radio" id="html1" name="html" value="Hypertext Markup Language">
+    <label for="html1">Hypertext Markup Language</label><br>
+    <input type="radio" id="html2" name="html" value="Hypermark Trade Language">
+    <label for="html2">Hypermark Trade Language</label><br>
+    <input type="radio" id="html3" name="html" value="Hyperspace Time Markup">
+    <label for="html3">Hyperspace Time Markup</label><br>
+    <input type="radio" id="html4" name="html" value="Hypermedia Meta Language">
+    <label for="html4">Hypermedia Meta Language</label><br><br>
+
+    <!-- Pregunta 2 -->
+    <p><strong>2. ¿Cuál de los siguientes nombres no corresponde a un elemento HTML?</strong></p>
+    <input type="radio" id="script" name="elemento" value="SCRIPT">
+    <label for="script">SCRIPT</label><br><br>
+
+    <!-- Pregunta 3 -->
+    <p><strong>3. ¿Qué elemento permite crear un formulario en HTML?</strong></p>
+    <input type="radio" id="form" name="formulario" value="FORM">
+    <label for="form">FORM</label><br><br>
+
+    <!-- Pregunta 4 -->
+    <p><strong>4. ¿Cuáles de los siguientes elementos HTML permiten colocar un dato de tipo arbitrario en un documento HTML?</strong></p>
+    <input type="checkbox" id="img" name="elementos[]" value="IMG">
+    <label for="img">IMG</label><br>
+    <input type="checkbox" id="embed" name="elementos[]" value="EMBED">
+    <label for="embed">EMBED</label><br>
+    <input type="checkbox" id="applet" name="elementos[]" value="APPLET">
+    <label for="applet">APPLET</label><br>
+    <input type="checkbox" id="object" name="elementos[]" value="OBJECT">
+    <label for="object">OBJECT</label><br><br>
+
+    <!-- Pregunta 5 -->
+    <p><strong>5. ¿Cuáles de los siguientes formatos de imagen son soportados por el elemento IMG?</strong></p>
+    <input type="checkbox" id="gif" name="formatos[]" value="GIF">
+    <label for="gif">GIF</label><br>
+    <input type="checkbox" id="pcx" name="formatos[]" value="PCX">
+    <label for="pcx">PCX</label><br>
+    <input type="checkbox" id="tif" name="formatos[]" value="TIF">
+    <label for="tif">TIF</label><br><br>
+
+    <!-- Botones -->
+    <button type="submit">Enviar examen</button>
+    <button type="reset">Borrar examen</button>
+  </form>
+
+  <br>
+
+  
+</head>
+<body>
+  <h1>HOJA DE INSCRIPCIÓN EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+
+  <form>
+    <!-- Datos Personales -->
+    <fieldset>
+      <legend>Datos Personales</legend>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br><br>
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos"><br><br>
+
+      <label for="dni">DNI:</label>
+      <input type="text" id="dni" name="dni"><br><br>
+
+      <label for="localidad">Localidad de Nacimiento:</label>
+      <input type="text" id="localidad" name="localidad"><br><br>
+
+      <label for="provincia">Provincia:</label>
+      <input type="text" id="provincia" name="provincia"><br><br>
+
+      <label for="fecha">Fecha de Nacimiento:</label>
+      <input type="date" id="fecha" name="fecha"><br><br>
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion"><br><br>
+
+      <label for="cp">Código Postal:</label>
+      <input type="text" id="cp" name="cp"><br><br>
+    </fieldset>
+
+    <!-- Forma de Acceso -->
+    <fieldset>
+      <legend>Forma de Acceso</legend>
+
+      <label><strong>Cupo 1 (Bachillerato):</strong></label><br>
+      <input type="radio" id="bach_rel" name="acceso" value="bachillerato_relacionado">
+      <label for="bach_rel">Bachillerato relacionado</label><br>
+      <input type="radio" id="bach_no" name="acceso" value="bachillerato_no_relacionado">
+      <label for="bach_no">Bachillerato no relacionado</label><br><br>
+
+      <input type="radio" id="otros" name="acceso" value="otros">
+      <label for="otros">Otros (especifique):</label>
+      <input type="text" name="otros_especificar"><br><br>
+
+      <input type="radio" id="tecnico" name="acceso" value="tecnico">
+      <label for="tecnico">Cupo 2 (Técnico)</label><br>
+
+      <input type="radio" id="prueba" name="acceso" value="prueba_acceso">
+      <label for="prueba">Cupo 3 (Prueba de acceso)</label><br><br>
+    </fieldset>
+
+    <!-- Documentos Adjuntados -->
+    <fieldset>
+      <legend>Documentos Adjuntados</legend>
+
+      <input type="checkbox" id="fotocopia_dni" name="documentos[]" value="fotocopia_dni">
+      <label for="fotocopia_dni">Fotocopia DNI</label><br>
+
+      <input type="checkbox" id="certificado" name="documentos[]" value="certificado_academico">
+      <label for="certificado">Certificado Académico</label><br>
+
+      <input type="checkbox" id="otros_doc" name="documentos[]" value="otros">
+      <label for="otros_doc">Otros documentos (especifique):</label>
+      <input type="text" name="otros_documentos"><br><br>
+    </fieldset>
+
+    <!-- Botones -->
+    <button type="submit">Enviar Solicitud</button>
+    <button type="reset">Borrar</button>
+  </form>
+
+  <h1>Formulario 4</h1>
+  <form>
+  <!-- Fecha -->
+  <label>Fecha:</label>
+  <input type="date" name="fecha"><br><br>
+
+  <!-- Selección de archivos -->
+  <label>Selecciona archivo:</label>
+  <input type="file" name="archivo"><br><br>
+
+  <!-- Radios: Procesador -->
+  <label>Procesador:</label><br>
+  <input type="radio" name="processor" value="procesadoramd"> AMD<br>
+  <input type="radio" name="processor" value="processadorintel_i5"> Intel i5<br>
+  <input type="radio" name="processor" value="processadorintel_i7"> Intel i7<br><br>
+
+  <!-- Radios: Asignatura -->
+  <label>Asignatura:</label><br>
+  <input type="radio" name="asignatura" value="asignaturamatematicas"> Matemáticas<br>
+  <input type="radio" name="asignatura" value="asignaturahistoria"> Historia<br>
+  <input type="radio" name="asignatura" value="asignaturageografía"> Geografía<br>
+  <input type="radio" name="asignatura" value="asignaturalengua"> Lengua<br><br>
+
+  <!-- Textos -->
+  <label>Nombre:</label>
+  <input type="text" name="name"><br>
+  <label>Apellidos:</label>
+  <input type="text" name="lastname"><br>
+  <label>Dirección:</label>
+  <input type="text" name="address"><br><br>
+
+  <!-- Color -->
+  <label>Color favorito:</label>
+  <input type="color" name="color"><br><br>
+
+  <!-- Textarea -->
+  <label>Comentarios:</label><br>
+  <textarea rows="6" cols="59">Usa esta caja para escribir</textarea><br><br>
+
+  <!-- Otra fecha -->
+  <label>Fecha adicional:</label>
+  <input type="date" name="fecha2"><br><br>
+
+  <!-- Select: Idioma -->
+  <label>Idioma:</label>
+  <select name="language">
+    <option value="English">English</option>
+    <option value="German">German</option>
+    <option value="French">French</option>
+  </select><br><br>
+
+  <!-- Hora -->
+  <label>Hora:</label>
+  <input type="time" name="hora"><br><br>
+
+  <!-- Otro archivo -->
+  <label>Sube otro archivo:</label>
+  <input type="file" name="archivo2"><br><br>
+
+  <!-- Checkboxes: Género -->
+  <label>Género:</label><br>
+  <input type="checkbox" name="gender" value="feminine"> Femenino<br>
+  <input type="checkbox" name="gender" value="masculine"> Masculino<br>
+</form>
+
+<h1>Formulario 5</h1>
+<form>
+  <!-- Select múltiple: Velocidad -->
+  <label>Velocidad:</label>
+  <select name="speed" multiple>
+    <option value="100_mbits">100 Mbits</option>
+    <option value="1000_mbits">1000 Mbits</option>
+  </select><br><br>
+
+  <!-- Textos -->
+  <label>DNI:</label>
+  <input type="text" name="ID"><br>
+  <label>Nombre:</label>
+  <input type="text" name="name"><br>
+  <label>Apellidos:</label>
+  <input type="text" name="surname"><br>
+  <label>Email:</label>
+  <input type="email" name="email"><br><br>
+
+  <!-- Radios: Red -->
+  <label>Red:</label><br>
+  <input type="radio" name="red" value="red2g"> 2G<br>
+  <input type="radio" name="red" value="red3g"> 3G<br>
+  <input type="radio" name="red" value="red4g"> 4G<br><br>
+
+  <!-- Hora -->
+  <label>Hora:</label>
+  <input type="time" name="hora"><br><br>
+
+  <!-- Checkboxes: Procesador -->
+  <label>Procesador:</label><br>
+  <input type="checkbox" name="processor" value="procesadoramd"> AMD<br>
+  <input type="checkbox" name="processor" value="processadorintel_i5"> Intel i5<br>
+  <input type="checkbox" name="processor" value="processadorintel_i7"> Intel i7<br><br>
+
+  <!-- Textarea -->
+  <label>Comentarios:</label><br>
+  <textarea rows="6" cols="49">Por favor, escribe aquí</textarea><br><br>
+
+  <!-- Color -->
+  <label>Color favorito:</label>
+  <input type="color" name="color"><br>
+</form>
+
+</body>
+</html>5

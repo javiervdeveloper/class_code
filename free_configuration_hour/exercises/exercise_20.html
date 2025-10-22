@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise_20</title>
+</head>
+<body>
+    <script>
+        //Vamos a desarrollar un programa que pida el nombre y la edad del alumno, si es menor de 18 se mostrara por pantalla: "Es menor de edad" y si es mayor de edad se mostrara "Es mayor de eddad"
+        //Pide la nota del alumno, y mostrara un mensaje de este tipo.
+        //Tiene un suspenso, si la nota es mejor que 5
+        //Tiene un suficiente, si la nota esta entre 5 y 6
+        //Tiene un bien, si la nota esta entre 6 y 7
+        //Tiene un notable, si la nota esta entre 7 y 9
+        //Tiene un sobresaliente, si la nota esta entre 9 y 10
+        //Tiene matricula de honor, si la nota es un 10
+
+ 
+        let numero = 20;
+        numero = prompt("Ingrese su edad");
+
+        switch (true) {
+            case (numero > 17):
+                 document.write("Usted es mayor de edad");
+                break;
+
+            case (numero === 18):
+                 document.write("Usted tiene 18 años justo");
+                 break;
+
+            default:
+                document.write("Usted es menor de edad");
+                break;
+}
+        let nota; 
+        nota = prompt("Introduce la nota del alumno:");
+
+        switch (true) {
+            case (nota < 5):
+                document.write(" Tiene un suspenso");
+                break;
+
+            case (nota >= 5 && nota < 6):
+                document.write(" Tiene un suficiente");
+                break;
+
+            case (nota >= 6 && nota < 7):
+                document.write(" Tiene un bien");
+                break;
+
+            case (nota >= 7 && nota < 9):
+                document.write(" Tiene un notable");
+                break;
+
+            case (nota >= 9 && nota < 10):
+                document.write(" Tiene un sobresaliente");
+                break;
+
+            case (nota == 10):
+                document.write(" Tiene matrícula de honor");
+                break;
+
+            default:
+             document.write(" Nota no válida");
+            break;
+}
+5
+
+ 
+    </script>
+</body>
+</html>
